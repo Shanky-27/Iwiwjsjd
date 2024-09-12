@@ -1,0 +1,137 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+}
+
+/* Container Styles */
+.container {
+    background-color: transparent;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    border: solid White 2px;
+
+}
+
+/* Heading Styles */
+h1,h2 {
+    font-size: 2.5em;
+    color: #333;
+    font-family: Comic Sans Ms;
+    color: whitesmoke;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+    margin-bottom: 30px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    background-color: transparent;
+    transition: border 0.3s ease-in-out;
+    color: whitesmoke;
+    font-family: Comic Sans Ms;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #6e8efb;
+}
+
+button {
+    background-color: #6e8efb;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #556ff5;
+}
+
+/* Task List Styles */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+li:hover {
+    transform: scale(1.02);
+}
+
+/* Delete Button */
+form button {
+    background-color: #ff6b6b;
+    padding: 10px 15px;
+    font-size: 0.9em;
+}
+
+form button:hover {
+    background-color: #e05858;
+}
+
+/* Completed Task */
+li.completed {
+    background-color: #d1e7dd;
+    text-decoration: line-through;
+    color: #495057;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    input[type="text"],
+    textarea {
+        font-size: 0.9em;
+    }
+
+    button {
+        font-size: 0.9em;
+        padding: 10px 20px;
+    }
+}
